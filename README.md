@@ -85,7 +85,7 @@ ICPR 2010 Contest on Semantic Description of Human Activities (SDHA 2010)
 ```
 ### / model_alexnet
 ```
-用于存放第一次训练结束后的tflearn model 
+用于存放第一次训练结束后的tflearn model
 ```
 ### / moddel_nn
 ```
@@ -130,12 +130,12 @@ ICPR 2010 Contest on Semantic Description of Human Activities (SDHA 2010)
 
 #### Test_multiple.py
 ```
-
+二次训练的预测模块
 ```
 
 #### Video.py
 ```
-
+读取视频，返回正常/异常
 ```
 
 ## 可视化
