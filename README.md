@@ -158,3 +158,10 @@ Accuracy_validation
 
 ![](http://p1.bpimg.com/567571/6818b0757dc42525.jpg)
 ***
+
+## 运行结果
+```
+修改Video.py中的文件名，执行后如下图所示
+```
+
+![](http://p1.bpimg.com/567571/190a0ea7c71d8f69.png)
