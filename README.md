@@ -151,7 +151,8 @@ cd Vcheck
 tensorboard --logdir=Board/
 ```
 ***
-第一次训练的TensorBoard如下:
+不管怎样，模型是收敛的。
+单帧预训练的TensorBoard如下:
 
 Loss/Validation
 
