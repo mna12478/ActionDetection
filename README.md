@@ -13,13 +13,13 @@
 ## 运行方式
 (训练阶段已完成，过程可以通过代码了解)
 
-先下载数据集和各类模型: 存于 [https://pan.baidu.com/s/1hsHW10K](https://pan.baidu.com/s/1hsHW10K)
+数据集和各类模型: 存于 [https://pan.baidu.com/s/1hsHW10K](https://pan.baidu.com/s/1hsHW10K)
 
 将数据和模型解压到根目录下，然后在video.py内更改要预测的视频，无论什么视频都会切成20帧:
 ```bash
 python video.py 
 ```
-## 运行环境
+## 训练与运行环境
 ```
 硬件：i7-6700HQ + GTX1060 + 16G DDR4
 系统与组件：Win10-64-bit  + Cuda-8.0 + Anaconda3-4.1.1 (Python3.5 .ver)
