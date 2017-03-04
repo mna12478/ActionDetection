@@ -77,7 +77,7 @@ biases = {
 # Construct model
 pred = multilayer_perceptron(x, weights, biases)
 # Define loss and optimizer
-cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(pred, y))
+cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=pred, labels=y))
 optimizer = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(cost)
 saver = tf.train.Saver()
 # Initializing the variables
@@ -88,7 +88,7 @@ with tf.device('/gpu:0'):
     with tf.Session() as sess:
         sess.run(init)
         # Training cycle
-        for epoch in range(20000):
+        for epoch in range(4000):
             _, c = sess.run([optimizer, cost], feed_dict={x: train_data, y: train_label})
             if epoch % display_step == 0:
                 print("Epoch:", '%04d' % (epoch+1), "cost=", \

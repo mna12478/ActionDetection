@@ -48,11 +48,10 @@ def predict(test_data):
     init = tf.global_variables_initializer()
 
     # Launch the graph
-    with tf.device('/gpu:0'):
-        with tf.Session() as sess:
-            saver.restore(sess, "./model_nn/model.ckpt")
-            p = sess.run(pred, feed_dict={x: test_data})
-            # print(p)
+    with tf.Session() as sess:
+        saver.restore(sess, "./model_nn/model.ckpt")
+        p = sess.run(pred, feed_dict={x: test_data})
+        # print(p)
 
     if p[0][0] > p[0][1]:
         return "异常"

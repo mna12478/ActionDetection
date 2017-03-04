@@ -106,7 +106,7 @@ for i in range(100):
             image = load_my_image(file_name)
             # print(model.predict([image]))
             p = model.predict([image])[0]
-            all_list[i][j+3] = round(max(p[2], p[4], p[5]),5)
+            all_list[i][j+3] = round(max(p[2], p[4], p[5]), 5)
 
 with open("./csv_file/seq.csv", "w") as f:
     writer = csv.writer(f)
