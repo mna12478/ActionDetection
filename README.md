@@ -164,4 +164,4 @@ Accuracy_validation
 修改Video.py中的文件名，执行后如下图所示
 ```
 
-![](http://p1.bpimg.com/567571/190a0ea7c71d8f69.png)
+![](http://p1.bpimg.com/567571/f691d915d9780601.png)
