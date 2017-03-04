@@ -35,7 +35,7 @@ ICPR 2010 Contest on Semantic Description of Human Activities (SDHA 2010)
 概率序列训练：双隐层网络 (tensorflow)
 ```
 ***
-## 文件夹内容说明
+## DATA包下文件夹内容说明
 ### / borad
 ```
 用于存放Tensorboard文件
