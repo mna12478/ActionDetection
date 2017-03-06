@@ -13,14 +13,19 @@
 如下图所示：
 
 ![](http://i1.piimg.com/567571/fb8808b64f777e1c.png)
-
+***
 ![](http://p1.bpimg.com/567571/bffc722d19151f06.png)
-
+***
 ![](http://p1.bqimg.com/567571/c0b101a9ad9b63a8.png)
 
+***
 ![](http://p1.bqimg.com/567571/fabf70ebdd632f3d.png)
 
+***
+
 ![](http://p1.bqimg.com/567571/06c542c18c3d4559.png)
+
+***
 ## 运行方式
 (训练阶段已完成，过程可以通过代码了解)
 
