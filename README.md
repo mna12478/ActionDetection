@@ -6,8 +6,8 @@
 ```
 ***
 
-## 实现的功能
-这个程序大概能做的事就是读取一段视频流然后判断内容是否属于异常行为。
+## 实现功能
+这个程序能做的事就是读取一段视频流，然后判断内容是否属于异常行为。
 
 
 如下图所示：
@@ -145,7 +145,7 @@ ICPR 2010 Contest on Semantic Description of Human Activities (SDHA 2010)
 读取视频，返回正常/异常
 ```
 
-## 可视化
+## 训练过程可视化
 ```
 cd Vcheck
 tensorboard --logdir=Board/
