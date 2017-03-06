@@ -1,6 +1,12 @@
 #coding=utf-8
 
 import tensorflow as tf
+import numpy as np
+
+def softmax(x):
+    """Compute softmax values for each sets of scores in x."""
+    e_x = np.exp(x - np.max(x))
+    return e_x / e_x.sum()
 
 def predict(test_data):
     tf.reset_default_graph()
@@ -51,8 +57,9 @@ def predict(test_data):
     with tf.Session() as sess:
         saver.restore(sess, "./model_nn/model.ckpt")
         p = sess.run(pred, feed_dict={x: test_data})
+        p = softmax(p)
         # print(p)
-
+    print(p[0][0], p[0][1])
     if p[0][0] > p[0][1]:
         return "异常"
     else:
