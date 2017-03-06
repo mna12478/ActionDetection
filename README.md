@@ -19,7 +19,7 @@
 ![](http://p1.bqimg.com/567571/c0b101a9ad9b63a8.png)
 
 ***
-![](http://p1.bqimg.com/567571/fabf70ebdd632f3d.png)
+![](http://i1.piimg.com/567571/6f5297948e00b87b.png)
 
 ***
 
@@ -33,7 +33,7 @@
 
 将数据和模型解压到根目录下，然后在video.py内更改要预测的视频，无论什么视频都会切成20帧:
 ```bash
-python video.py 
+python video.py 1.avi
 ```
 ## 训练与运行环境
 ```
