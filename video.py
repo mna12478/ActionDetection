@@ -15,7 +15,7 @@ def main():
     读取视频, 取得帧数，确定步长
     '''
     length = int(videoCapture.get(cv2.CAP_PROP_FRAME_COUNT))
-    phase = int(length / 20)
+    phase = int((length - 1) / 20)
     fgbg = cv2.createBackgroundSubtractorMOG2()
     success, frame = videoCapture.read()
     kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (3, 3))
