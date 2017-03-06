@@ -159,7 +159,7 @@ ICPR 2010 Contest on Semantic Description of Human Activities (SDHA 2010)
 
 ## 训练过程可视化
 ```
-cd Vcheck
+cd ActionDetection
 tensorboard --logdir=Board/
 ```
 ***
