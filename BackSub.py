@@ -1,6 +1,8 @@
 import numpy as np
 import cv2
 import os
+
+# 这个脚本意在提供背景减除法实例，生成的图像位置和帧数理应自己修改
 # 0 握手 1 拥抱  2 踢  4 打 5 推
 labels = ['handshake', 'hug', 'kick', '##' ,'hit', 'push']
 v_list = os.listdir('./video')
@@ -10,7 +12,7 @@ for line in v_list:
     fname = './video/' + line
     print(fname)
     cap = cv2.VideoCapture(fname)
-    kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(3,3))
+    kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (3, 3))
     fgbg = cv2.createBackgroundSubtractorMOG2(detectShadows=True)
     i = 1
     while(1):
@@ -19,12 +21,9 @@ for line in v_list:
         ret, frame = cap.read()
         if frame is None:
             break
-        # 去掉全黑
         # 原始图像
         fgmask = fgbg.apply(frame)
         fgmask = cv2.morphologyEx(fgmask, cv2.MORPH_OPEN, kernel)
-        if i % 5 != 0:
-            continue
         # # 镜像翻转
         mirror_frame = cv2.flip(frame, 1)
         mirror_fgmask = fgbg.apply(mirror_frame)
