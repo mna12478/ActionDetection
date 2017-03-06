@@ -11,15 +11,9 @@
 
 
 如下图所示：
-![](http://p1.bpimg.com/567571/f691d915d9780601.png)
-
-![](http://p1.bpimg.com/567571/4f952fb7e0318b63.png)
 
 ![](http://p1.bqimg.com/567571/08b9f01f0fc0da83.png)
-
-
-
-
+![](http://p1.bpimg.com/567571/4f952fb7e0318b63.png)
 ## 运行方式
 (训练阶段已完成，过程可以通过代码了解)
 
@@ -107,10 +101,7 @@ ICPR 2010 Contest on Semantic Description of Human Activities (SDHA 2010)
 ```
 用于存放第二次训练结束后的 tensorflow model
 ```
-### / tmp_pics
-```
-用于存放预测整段视频时隔帧的截图
-```
+
 ### / video
 ```
 所有视频文件，存放格式为：
@@ -160,7 +151,7 @@ cd Vcheck
 tensorboard --logdir=Board/
 ```
 ***
-不管怎样，模型是收敛的。
+模型是收敛的。
 单帧预训练的TensorBoard如下:
 
 Loss/Validation
