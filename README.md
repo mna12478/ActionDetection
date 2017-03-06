@@ -13,7 +13,7 @@
 如下图所示：
 
 ![](http://p1.bqimg.com/567571/08b9f01f0fc0da83.png)
-![](http://p1.bpimg.com/567571/4f952fb7e0318b63.png)
+![](http://p1.bqimg.com/567571/8893aa50928ccf2a.png)
 ## 运行方式
 (训练阶段已完成，过程可以通过代码了解)
 
