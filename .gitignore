@@ -46,3 +46,7 @@ Network Trash Folder
 Temporary Items
 .apdisk
 *.pyc
+*.avi
+Board/*
+model_alexnet/*
+model_nn/*
