@@ -21,8 +21,7 @@
 
 ## UI(03/07更新)
 
-![UI](http://p1.bpimg.com/567571/6b34c78daccf0360.png)
-
+![UI](http://p1.bqimg.com/567571/37a17fb0d8b218b8.png)
 ***
 ## 实现功能
 
