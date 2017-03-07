@@ -43,9 +43,9 @@
 
 数据集和各类模型: 存于 [https://pan.baidu.com/s/1qXZGQRU](https://pan.baidu.com/s/1qXZGQRU)
 
-将数据和模型解压到根目录下，然后在video.py内更改要预测的视频，无论什么视频都会切成20帧:
+将数据和模型解压到根目录下，然后在UI内操作，每隔5帧启动一个20帧的SEQ用来预测：
 ```bash
-python video.py 1.avi
+python UI_video.py
 ```
 ## 训练与运行环境
 ```
