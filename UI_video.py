@@ -15,20 +15,23 @@ from PyQt5 import QtCore
 # 创建一个概率序列
 feature = np.zeros([20])
 result = ''
-filename = 'output.avi'
+
+# 选择视频
+global fileName
+fileName = None
 
 class Capture():
     def __init__(self):
         self.capturing = False
         # 读取视频
-        self.cap = cv2.VideoCapture("./test/" + filename)
-        self.cap2 = cv2.VideoCapture("./test/" + filename)
+        self.cap = cv2.VideoCapture(fileName)
+        self.cap2 = cv2.VideoCapture(fileName)
     def startCapture(self):
         print("pressed Start")
         self.capturing = True
-        self.cap = cv2.VideoCapture("./test/" + filename)
-        self.cap2 = cv2.VideoCapture("./test/" + filename)
-        while(self.capturing):
+        self.cap = cv2.VideoCapture(fileName)
+        self.cap2 = cv2.VideoCapture(fileName)
+        if self.capturing:
             # 程序开始时间
             start_clock = time.clock()
             # 读取参数
@@ -97,6 +100,7 @@ class Capture():
         print("pressed Quit")
         QtCore.QCoreApplication.quit()
 
+
 class Window(QWidget):
     def __init__(self):
 
@@ -104,6 +108,17 @@ class Window(QWidget):
         self.setWindowTitle('Control Panel')
 
         self.capture = Capture()
+
+        self.select_button = QPushButton('Select', self)
+        self.select_button.clicked.connect(self.selectFromFile) # 注意不要按自动默认的加括号，不然一开始马上就调这个函数了不知道为什么
+
+        self.file_label = QLabel()
+        self.file_label.setText("file path:")
+        self.file_label.setStyleSheet('font-size: 10pt; font-family:Courier; background-color: white')
+        self.file_label.setFixedHeight(20)
+        self.file_label.setFixedWidth(300)
+
+
         self.start_button = QPushButton('Start', self)
         self.start_button.clicked.connect(self.capture.startCapture)
 
@@ -114,17 +129,28 @@ class Window(QWidget):
         self.quit_button.clicked.connect(self.capture.quitCapture)
 
         self.result_label = QLabel(self)
+        self.result_label.setStyleSheet('font-size: 18pt; font-family:Courier; color: red; background-color: white')
         self.result_label.setText('helloworld.')
 
         vbox = QVBoxLayout(self)
+        vbox.addWidget(self.select_button)
+        vbox.addWidget(self.file_label)
         vbox.addWidget(self.start_button)
         vbox.addWidget(self.end_button)
         vbox.addWidget(self.quit_button)
         vbox.addWidget(self.result_label)
 
         self.setLayout(vbox)
-        self.setGeometry(100, 100 , 200, 200)
+        self.setGeometry(100, 100 , 400, 400)
         self.show()
+
+    def selectFromFile(self):
+        global fileName
+        fileName, filetype = QFileDialog.getOpenFileName(self,
+                                                         "选取文件",
+                                                         " ",
+                                                         "All Files (*);;Text Files (*.txt)")  # 设置文件扩展名过滤,注意用双分号间隔
+        self.file_label.setText("file path:" + fileName)
 
 
 if __name__=="__main__":
