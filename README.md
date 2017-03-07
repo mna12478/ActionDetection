@@ -57,6 +57,31 @@
 ```bash
 python UI_video.py
 ```
+
+## 训练过程可视化
+```
+cd ActionDetection
+tensorboard --logdir=Board/
+```
+***
+模型是收敛的。
+单帧预训练的TensorBoard如下:
+
+Loss/Validation
+
+![](http://p1.bqimg.com/567571/b2bb5be0fbb3d502.jpg)
+
+Accuracy
+
+![](http://p1.bpimg.com/567571/f45bd2cfbd18f8e3.jpg)
+
+Accuracy_validation
+
+![](http://p1.bpimg.com/567571/6818b0757dc42525.jpg)
+***
+
+
+
 ## 训练与运行环境
 ```
 硬件：i7-6700HQ + GTX1060 + 16G DDR4
@@ -178,27 +203,5 @@ ICPR 2010 Contest on Semantic Description of Human Activities (SDHA 2010)
 ```
 读取视频，返回正常/异常
 ```
-
-## 训练过程可视化
-```
-cd ActionDetection
-tensorboard --logdir=Board/
-```
-***
-模型是收敛的。
-单帧预训练的TensorBoard如下:
-
-Loss/Validation
-
-![](http://p1.bqimg.com/567571/b2bb5be0fbb3d502.jpg)
-
-Accuracy
-
-![](http://p1.bpimg.com/567571/f45bd2cfbd18f8e3.jpg)
-
-Accuracy_validation
-
-![](http://p1.bpimg.com/567571/6818b0757dc42525.jpg)
-***
 
 
