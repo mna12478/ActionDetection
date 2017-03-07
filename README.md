@@ -22,7 +22,7 @@
 ## UI(03/07更新)
 ![](http://p1.bpimg.com/567571/55a676252b9fbcea.png)
 
-![](http://i1.piimg.com/567571/8302978f6d0474e2.png)
+![](http://p1.bpimg.com/567571/6b34c78daccf0360.png)
 
 ***
 ## 实现功能
