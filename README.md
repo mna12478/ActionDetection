@@ -42,7 +42,7 @@
 (训练阶段已完成，过程可以通过代码了解)
 
 
-模型与Tensorboard: [http://pan.baidu.com/s/1qYTl7mW](http://pan.baidu.com/s/1qYTl7mW)
+模型与Tensorboard: [http://pan.baidu.com/s/1jHPdMFc](http://pan.baidu.com/s/1jHPdMFc)
 
 
 分类和预处理好的数据: [http://pan.baidu.com/s/1kV1B0sZ](http://pan.baidu.com/s/1kV1B0sZ)
