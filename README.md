@@ -20,9 +20,8 @@
 ![](http://p1.bpimg.com/567571/010a7e57070b0df7.png)
 
 ## UI(03/07更新)
-![](http://p1.bpimg.com/567571/55a676252b9fbcea.png)
 
-![](http://p1.bpimg.com/567571/6b34c78daccf0360.png)
+![UI](http://p1.bpimg.com/567571/6b34c78daccf0360.png)
 
 ***
 ## 实现功能
