@@ -58,8 +58,7 @@ def predict(test_data):
         saver.restore(sess, "./model_nn/model.ckpt")
         p = sess.run(pred, feed_dict={x: test_data})
         p = softmax(p)
-        # print(p)
-    print(p[0][0], p[0][1])
+    # print(p)
     if p[0][0] > p[0][1]:
         return "异常"
     else:
