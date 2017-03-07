@@ -199,9 +199,9 @@ ICPR 2010 Contest on Semantic Description of Human Activities (SDHA 2010)
 二次训练的预测模块
 ```
 
-#### Video.py
+#### UI_video.py
 ```
-读取视频，返回正常/异常
+启动一个PYQT5写成的简单UI，可以读取视频文件并进行预测
 ```
 
 
