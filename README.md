@@ -40,9 +40,8 @@
 ***
 ## 运行方式
 (训练阶段已完成，过程可以通过代码了解)
-
-数据集和各类模型: 存于 [https://pan.baidu.com/s/1qXZGQRU](https://pan.baidu.com/s/1qXZGQRU)
-
+模型与Tensorboard: [http://pan.baidu.com/s/1qYTl7mW](http://pan.baidu.com/s/1qYTl7mW)
+分类和预处理好的数据: [http://pan.baidu.com/s/1kV1B0sZ](http://pan.baidu.com/s/1kV1B0sZ)
 将数据和模型解压到根目录下，然后在UI内操作，每隔5帧启动一个20帧的SEQ用来预测：
 ```bash
 python UI_video.py
